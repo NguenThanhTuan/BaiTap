@@ -29,3 +29,20 @@ document.write("<br>");
 //Bài 1:
 document.write("Bài 1:");
 document.write("<br>");
+function tach_ten ()
+{
+    var str = "TUAN";
+    
+    var substring = str.substring(0, 4); //trích chuỗi con ở giữa
+    var substring2 = str.substring(0, 3);
+    var substring3 = str.substring(0, 2);
+    var substring4 = str.substring(1, 4);
+    document.write(substring); 
+    document.write("<br>");
+    document.write(substring2);
+    document.write("<br>");
+    document.write(substring3); 
+    document.write("<br>");
+    document.write(substring4);
+}
+tach_ten();
