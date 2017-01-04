@@ -33,7 +33,7 @@ function tach_ten ()
 {
     var str = "TUAN";
     
-    var substring = str.substring(0, 4); //trích chuỗi con ở giữa
+    var substring = str.substring(0, 4); 
     var substring2 = str.substring(0, 3);
     var substring3 = str.substring(0, 2);
     var substring4 = str.substring(1, 4);
