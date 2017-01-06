@@ -1,6 +1,6 @@
 .header 
 {
-    background-color: #b31aff;
+    background-color: #363cf4;
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -27,7 +27,7 @@
 .add 
 {
     padding: 10px;
-    padding-bottom: 9px;
+    padding-bottom: 10px;
     width: 16%;
     background: #d9d9d9;
     color: black;
