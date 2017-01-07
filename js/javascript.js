@@ -42,7 +42,7 @@ function newElement()
     li.appendChild(t);
     if (inputValue === '') 
     {
-        alert("You must write something!");
+        alert("Hãy nhập công việc của bạn");
     } 
     else 
     {
