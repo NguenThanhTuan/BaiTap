@@ -65,3 +65,12 @@ function newElement()
         }
     }
 }
+function runScript(e) 
+{
+    if (e.keyCode == 13) 
+    {
+        newElement();
+        return false;
+    } 
+    console.log("e");
+}
