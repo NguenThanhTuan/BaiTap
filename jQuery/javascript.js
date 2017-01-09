@@ -11,7 +11,7 @@ $(document).ready(function () {
             localStorage.setItem('listItems', $('#list').html());   
             $('#input').val("");
         }
-        if(item==='')
+        if(item ==='')
         {
             alert("Hãy nhập công việc của bạn");
         }
