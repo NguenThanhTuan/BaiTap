@@ -83,8 +83,8 @@
     $i=0;
     while ($i < ($sophantu - 1)) 
     {
-        
-        for ($j = $i+1; $j < $sophantu; $j++)
+        $j = $i + 1;
+        while ($j < $sophantu)
         {
             if ($mang3[$i] > $mang3[$j])
             {
@@ -92,6 +92,7 @@
                 $mang3[$j] = $mang3[$i];
                 $mang3[$i] = $tmp;
             }
+            $j++;
         }
         $i++;
     }
