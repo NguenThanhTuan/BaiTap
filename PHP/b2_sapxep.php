@@ -96,7 +96,7 @@
         $i++;
     }
     
-    //Hàm iển thị
+    //Hàm hiển thị
     function hienthi_while($mang)
     {
         $sophantu = count($mang);
@@ -132,24 +132,56 @@
     echo "<br>". "Giảm dần WHILE". "<br>";
     hienthi_while($mang4);	
 
+//Tăng dần Do...While
+    $mang5 = array(3, 27, 9, 11, 94, 95, 30);
+    $sophantu = count($mang5);
+    $i=0;
+    do 
+    {
+        for ($j = $i+1; $j < $sophantu; $j++)
+        {
+            if ($mang5[$i] > $mang5[$j])
+            {
+                $tmp = $mang5[$j];
+                $mang5[$j] = $mang5[$i];
+                $mang5[$i] = $tmp;
+            }
+        }
+        $i++;
+    } while ($i < ($sophantu - 1));
+    
+    function hienthi_do_while($mang)
+    {
+        $sophantu = count($mang);
+        $i = 0;
+        do 
+        {
+            print_r("<pre>");
+            echo $mang[$i]. "<br>";
+            $i++;
+        } while ($i < $sophantu);
+    }
+    echo "<br>". "Tăng dần Do...While". "<br>";
+    hienthi_do_while($mang5);
 
-	echo "Vòng lặp do...while". "<br>";
-	$i = 0;
-	do
-	{
-		
-		$array2[] = rand(1, 30);
-		$i++;
-
-	} while($i < 7);
-	sort($array2);
-	echo "Sắp xếp tăng dần: ";
-	print_r("<pre>");
-	print_r($array2);
-
-	rsort($array2);
-	echo "<br>". "Sắp xếp giảm dần: ";
-	print_r ("<pre>");
-	print_r($array2);
+    //Giảm dần Do...While
+    $mang6 = array(3, 27, 9, 11, 94, 95, 30);
+    $sophantu = count($mang6);
+    $i=0;
+    do 
+    {
+        for ($j = $i+1; $j < $sophantu; $j++)
+        {
+            if ($mang6[$i] < $mang6[$j])
+            {
+                $tmp = $mang6[$j];
+                $mang6[$j] = $mang6[$i];
+                $mang6[$i] = $tmp;
+            }
+        }
+        $i++;
+    } while ($i < ($sophantu - 1));
+    echo "<br>". "Giảm dần Do...While". "<br>";
+    hienthi_do_while($mang6);
 ?>
 	
